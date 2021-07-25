@@ -1,0 +1,506 @@
+
+* {
+    max-width: auto;
+}
+
+header, section {
+   color:rgba(235, 228, 228, 0.411);
+   }
+   img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+  }
+
+  * {
+      font-family: Consolas, monaco, monospace;
+      font-style: normal; 
+      font-variant: normal; 
+       } 
+
+ h2 {
+    font-style: bold;
+    display: block;
+    width: 70%;
+    margin-top: 10pt;
+    white-space: pre;
+    color: rgb(7, 7, 7);
+}
+
+h1 {
+    display: block;
+    text-align:center; 
+    width: 50%;
+    margin: auto;
+    white-space: pre;
+    color: rgb(229, 236, 236);
+}
+
+p.textmiddle {
+
+    font: Helvetica;
+    font-size: 12pt;
+    text-align:center; 
+    vertical-align: middle;
+    display: table-cell; 
+    height: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    padding: 5px;
+    max-width: auto;
+
+}
+
+p.withLabel {
+
+    font: Helvetica;
+    font-size: 12pt;
+    vertical-align: middle;
+    display: table-cell; 
+    height: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    padding: 5px;
+    max-width: auto;
+    background-color: #ffffcc;
+    border-left: 6px solid coral;
+
+}
+
+h1.textmiddle {
+    margin: auto;
+    padding-left: 15pt;
+    color: rgb(244, 248, 248);
+    font-size: 18pt;
+    text-align:center; 
+    vertical-align: middle;
+    width: 50%;
+    padding-top: 10px;
+    padding-bottom: 20px;
+}
+
+article.highlight {
+        display: block;
+        margin-right: auto;
+        margin-left: auto;
+        width: 40%;
+        color: coral;
+        font-size: 23px;
+    
+}
+
+.topnav {
+    background-color: #333;
+    overflow: hidden;
+    opacity: .8;
+  }
+  
+  /* Style the links inside the navigation bar */
+  .topnav a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  /* Change the color of links on hover */
+  .topnav a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  
+  /* Add a color to the active/current link */
+  .topnav a.active {
+    background-color: coral;
+    color: white;
+  }
+
+
+/* The flip box container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
+.flip-box {
+    background-color: transparent;
+    width: 350px;
+    height: 300px;
+    border: 1px solid #777777;
+    margin: 20pt;
+    perspective: 1000px; /* Remove this if you don't want the 3D effect */
+    text-align: center;
+    float: left;
+    display: block;
+  }
+  
+  /* This container is needed to position the front and back side */
+  .flip-box-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    vertical-align: auto;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+    font-size: 18pt;  
+  }
+  
+  /* Do an horizontal flip when you move the mouse over the flip box container */
+  .flip-box:hover .flip-box-inner {
+    transform: rotateX(180deg);
+  }
+  
+  /* Position the front and back side */
+  .flip-box-front, .flip-box-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden; /* Safari */
+    backface-visibility: hidden;
+  }
+  
+  /* Style the front side */
+  .flip-box-front {
+    background-color: #bbb;
+    color: rgb(3, 3, 3);
+    vertical-align: auto;
+  }
+  
+  /* Style the back side */
+  .flip-box-back {
+    background-color: #bbb;
+    font-size: 10pt; 
+    color: rgb(0, 0, 0);
+    transform: rotateX(180deg);
+  }
+  
+  * {
+    box-sizing: border-box;
+  }
+  
+  /* Set a background color */
+  body, html {
+    background-color: #474e5d;
+    font-family: Helvetica, sans-serif;
+    height: 100%;
+  }
+
+  .bg {
+    /* The image used */
+    background-image: url("/Users/alfredosuarez/Documents/GitHub/alfredos.github.io/kevin-laminto-7PqRZK6rbaE-unsplash (1).jpg");
+  
+    /* Full height */
+    height: 100%;
+  
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .babout {
+    /* The image used */
+    background-image: url("/Users/alfredosuarez/Documents/GitHub/alfredos.github.io/robert-katzki-fyHkeWGOpHM-unsplash.jpg");
+  
+    /* Full height */
+    height: 100%;
+  
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .lvlup {
+    /* The image used */
+    background-image: url("/Users/alfredosuarez/Documents/GitHub/alfredos.github.io/—Pngtree—level up neon sign vector_5997383.png");
+  
+    /* Full height */
+    height: 100%;
+  
+    /* Center and scale the image nicely */
+    background-position: bottom right;
+    background-repeat: no-repeat;
+    background: size 50px;
+  }
+  
+  /* The actual timeline (the vertical ruler) */
+  .timeline {
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  /* The actual timeline (the vertical ruler) */
+  .timeline::after {
+    content: '';
+    position: absolute;
+    width: 6px;
+    background-color: white;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    margin-left: -3px;
+  }
+  
+  /* Container around content */
+  .container {
+    padding: 10px 40px;
+    position: relative;
+    background-color: inherit;
+    width: 50%;
+  }
+  
+  /* The circles on the timeline */
+  .container::after {
+    content: '';
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    right: -17px;
+    background-color: white;
+    border: 4px solid #FF9F55;
+    top: 15px;
+    border-radius: 50%;
+    z-index: 1;
+  }
+  
+  /* Place the container to the left */
+  .left {
+    left: 0;
+  }
+  
+  /* Place the container to the right */
+  .right {
+    left: 50%;
+  }
+  
+  /* Add arrows to the left container (pointing right) */
+  .left::before {
+    content: " ";
+    height: 0;
+    position: absolute;
+    top: 22px;
+    width: 0;
+    z-index: 1;
+    right: 30px;
+    border: medium solid white;
+    border-width: 10px 0 10px 10px;
+    border-color: transparent transparent transparent white;
+  }
+  
+  /* Add arrows to the right container (pointing left) */
+  .right::before {
+    content: " ";
+    height: 0;
+    position: absolute;
+    top: 22px;
+    width: 0;
+    z-index: 1;
+    left: 30px;
+    border: medium solid white;
+    border-width: 10px 10px 10px 0;
+    border-color: transparent white transparent transparent;
+  }
+  
+  /* Fix the circle for containers on the right side */
+  .right::after {
+    left: -16px;
+  }
+  
+  /* The actual content */
+  .content {
+    padding: 20px 30px;
+    background-color: white;
+    color: black;
+    position: relative;
+    border-radius: 6px;
+  }
+  
+  /* Media queries - Responsive timeline on screens less than 600px wide */
+  @media screen and (max-width: 600px) {
+  /* Place the timelime to the left */
+    .timeline::after {
+      left: 31px;
+    }
+  
+  /* Full-width containers */
+    .container {
+      width: 100%;
+      padding-left: 70px;
+      padding-right: 25px;
+    }
+  
+  /* Make sure that all arrows are pointing leftwards */
+    .container::before {
+      left: 60px;
+      border: medium solid white;
+      border-width: 10px 10px 10px 0;
+      border-color: transparent white transparent transparent;
+    }
+  
+  /* Make sure all circles are at the same spot */
+    .left::after, .right::after {
+      left: 15px;
+    }
+  
+  /* Make all right containers behave like the left ones */
+    .right {
+      left: 0%;
+    }
+  }
+
+  
+  .footer-basic {
+    padding:40px 0;
+    background-color:#ffffff;
+    color:#000000;
+    
+  }
+  
+  .footer-basic ul {
+    padding:0;
+    list-style:none;
+    text-align:center;
+    font-size:18px;
+    line-height:1.6;
+    margin-bottom:0;
+  }
+  
+  .footer-basic li {
+    padding:0 10px;
+    display: inline-block;
+  }
+  
+  .footer-basic ul a {
+    color:rgb(0, 0, 0);
+    text-decoration:none;
+    opacity:0.8;
+  }
+  
+  .footer-basic ul a:hover {
+    opacity:1;
+  }
+  
+  .footer-basic .social {
+    text-align:center;
+    padding-bottom:25px;
+  }
+  
+  .footer-basic .social > a {
+    background-color: rgb(0, 0, 0);
+    font-size:24px;
+    width:40px;
+    height:40px;
+    line-height:40px;
+    display:inline-block;
+    text-align:center;
+    border-radius:50%;
+    border:1px solid rgb(255, 255, 255);
+    margin:0 8px;
+    opacity:0.8;
+    color: white;
+  }
+  
+  .footer-basic .social > a:hover {
+    opacity:1;
+  }
+  
+  .footer-basic .copyright {
+    margin-top:15px;
+    text-align:center;
+    font-size:13px;
+    color:#aaa;
+    margin-bottom:0;
+  }
+
+  .slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+  }
+  
+  /* Hide the images by default */
+  .mySlides {
+    display: none;
+  }
+  
+  /* Next & previous buttons */
+  .prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+  
+  /* Position the "next button" to the right */
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+  }
+  
+  /* Caption text */
+  .text {
+    color: #020202;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+  }
+  
+  /* Number text (1/3 etc) */
+  .numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+  }
+  
+  /* The dots/bullets/indicators */
+  .dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+  
+  .active, .dot:hover {
+    background-color: #717171;
+  }
+  
+  /* Fading animation */
+  .fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
+  @-webkit-keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
+  
+  @keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
