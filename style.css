@@ -188,7 +188,7 @@ article.highlight {
 
   .bg {
     /* The image used */
-    background-image: url("img/cloud.jpg");
+    background-image: url("/img/cloud.jpg");
   
     /* Full height */
     height: 100%;
@@ -200,7 +200,7 @@ article.highlight {
   }
   .babout {
     /* The image used */
-    background-image: url("img/cloud.jpg");
+    background-image: url("/img/cloud.jpg");
   
     /* Full height */
     height: 100%;
