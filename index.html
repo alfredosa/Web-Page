@@ -9,6 +9,12 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
     <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
     <script src="https://kit.fontawesome.com/a6d70c64b4.js" crossorigin="anonymous"></script>
+    <!--WhatsApp Addition-->  
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+<!--Floating WhatsApp css-->
+<link rel="stylesheet" href="https://rawcdn.githack.com/rafaelbotazini/floating-whatsapp/3d18b26d5c7d430a1ab0b664f8ca6b69014aed68/floating-wpp.min.css">
+<!--Floating WhatsApp javascript-->
+<script type="text/javascript" src="https://rawcdn.githack.com/rafaelbotazini/floating-whatsapp/3d18b26d5c7d430a1ab0b664f8ca6b69014aed68/floating-wpp.min.js"></script>
    </head>
    <body>
     <header>
@@ -171,6 +177,24 @@
         
       
     </main>
+    <div id="WAButton">
+
+      <script type="text/javascript">  
+        $(function () {
+                $('#WAButton').floatingWhatsApp({
+                    phone: '4917667169961', //WhatsApp Business phone number
+                    headerTitle: 'Send me a whatsapp!', //Popup Title
+                    popupMessage: 'Hey there stranger, how can I help you', //Popup Message
+                    showPopup: true, //Enables popup display
+                    buttonImage: '<img src="img/whatsapp.png"/>', //Button Image
+                    //headerColor: 'crimson', //Custom header color
+                    //backgroundColor: 'crimson', //Custom background button color
+                    position: "right" //Position: left | right
+     
+                });
+            });
+     </script>   
+    </div>
     <div class="footer-basic">
       <footer id="about">
           <div class="social"><a href="https://www.linkedin.com/in/alfredosa" target="_blank"><i class="icon ion-social-linkedin"></i></a><a href="https://www.instagram.com/alfredo_sa/" target="_blank"><i class="icon ion-social-instagram"></i></a><a href="https://twitter.com/alfredosa10" target="_blank"><i class="icon ion-social-twitter"></i></a><a href="#"><i class="icon ion-social-facebook"></i></a></div>
