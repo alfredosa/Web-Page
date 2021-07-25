@@ -24,7 +24,6 @@ header, section {
     display: block;
     width: 70%;
     margin-top: 10pt;
-    white-space: pre;
     color: rgb(7, 7, 7);
 }
 
@@ -33,19 +32,7 @@ h1 {
     text-align:center; 
     width: 50%;
     margin: auto;
-    white-space: pre;
     color: rgb(229, 236, 236);
-}
-
-@media screen and (max-width: 500px) {
-  h1, h2 {
-    float: none;
-    display: block;
-    text-align: left;
-  }
-  h1, h2 {
-    float: none;
-  }
 }
 
 p.textmiddle {
@@ -97,7 +84,7 @@ article.highlight {
         display: block;
         margin-right: auto;
         margin-left: auto;
-        width: 40%;
+        width: 50%;
         color: coral;
         font-size: 23px;
     
@@ -223,7 +210,7 @@ article.highlight {
   }
   .lvlup {
     /* The image used */
-    background-image: url("/Users/alfredosuarez/Documents/GitHub/alfredos.github.io/—Pngtree—level up neon sign vector_5997383.png");
+    background-image: url("img/neon.png");
   
     /* Full height */
     height: 100%;

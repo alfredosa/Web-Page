@@ -17,7 +17,18 @@ let arr = [
     "<em>We should consider every day lost on which we have not danced at least once. </em> -  Friedrich Nietzsche",
     "<em>When we are tired, we are attacked by ideas we conquered long ago. </em> -  Friedrich Nietzsche",
     "<em>I cannot believe in a God who wants to be praised all the time. </em> -  Friedrich Nietzsche",
-    "<em>The snake which cannot cast its skin has to die. As well the minds which are prevented from changing their opinions; they cease to be mind. </em> -  Friedrich Nietzsche"
+    "<em>The snake which cannot cast its skin has to die. As well the minds which are prevented from changing their opinions; they cease to be mind. </em> -  Friedrich Nietzsche",
+    "<em>Education is a system of imposed ignorance.</em> -  Noam Chomsky",
+    "<em>If we don't believe in freedom of expression for people we despise, we don't believe in it at all.</em> -  Noam Chomsky",
+    "<em>If there is no God, everything is permitted.</em> -  Fyodor Dostoevski",
+    "<em>To live without Hope is to Cease to live.</em> -  Fyodor Dostoevski",
+    "<em>The struggle itself towards the heights is enough to fill a man's heart. One must imagine Sisyphus happy.em> -  Albert Camus",
+    "<em>In the depth of winter, I finally learned that within me there lay an invincible summer.</em> -  Albert Camus",
+    "<em>The Third World is not a reality but an ideology.</em> -  Hannah Arendt",
+    "<em>Forgiveness is the key to action and freedom.</em> -  Hannah Arendt",
+    "<em>A lie told often enough becomes the truth.</em> -  Vladimir Lenin",
+    "<em>When there is state there can be no freedom, but when there is freedom there will be no state.</em> -  Vladimir Lenin"
+    
 ]
 
 function newQuote() {
