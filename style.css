@@ -188,7 +188,7 @@ article.highlight {
 
   .bg {
     /* The image used */
-    background-image: url("kevin-laminto-7PqRZK6rbaE-unsplash (1).jpg");
+    background-image: url("/img/head.jpg");
   
     /* Full height */
     height: 100%;
@@ -200,7 +200,7 @@ article.highlight {
   }
   .babout {
     /* The image used */
-    background-image: url("robert-katzki-fyHkeWGOpHM-unsplash.jpg");
+    background-image: url("/img/cloud.jpg");
   
     /* Full height */
     height: 100%;
