@@ -11,11 +11,60 @@
     <script src="https://kit.fontawesome.com/a6d70c64b4.js" crossorigin="anonymous"></script>
     <!--WhatsApp Addition-->  
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-<!--Floating WhatsApp css-->
-<link rel="stylesheet" href="https://rawcdn.githack.com/rafaelbotazini/floating-whatsapp/3d18b26d5c7d430a1ab0b664f8ca6b69014aed68/floating-wpp.min.css">
-<!--Floating WhatsApp javascript-->
-<script type="text/javascript" src="https://rawcdn.githack.com/rafaelbotazini/floating-whatsapp/3d18b26d5c7d430a1ab0b664f8ca6b69014aed68/floating-wpp.min.js"></script>
-   </head>
+    <link rel="stylesheet" href="https://rawcdn.githack.com/rafaelbotazini/floating-whatsapp/3d18b26d5c7d430a1ab0b664f8ca6b69014aed68/floating-wpp.min.css">
+    <!--Floating WhatsApp javascript-->
+    <script type="text/javascript" src="https://rawcdn.githack.com/rafaelbotazini/floating-whatsapp/3d18b26d5c7d430a1ab0b664f8ca6b69014aed68/floating-wpp.min.js"></script>
+    <!--Stock Chart-->
+    <script type="text/javascript" src="https://canvasjs.com/assets/script/jquery-1.11.1.min.js"></script>
+    <script type="text/javascript" src="https://canvasjs.com/assets/script/canvasjs.stock.min.js"></script>
+    <script type="text/javascript">
+    window.onload = function () {
+      var dps1 = [], dps2= [];
+      var stockChart = new CanvasJS.StockChart("chartContainer",{
+        theme: "light2",
+        exportEnabled: true,
+        title:{
+          text:"StockChart with Date-Time Axis"
+        },
+        subtitles: [{
+          text: "Bitcoin Price (in USD)"
+        }],
+        charts: [{
+          axisX: {
+            crosshair: {
+              enabled: true,
+              snapToDataPoint: true
+            }
+          },
+          axisY: {
+            prefix: "$"
+          },
+          data: [{
+            type: "candlestick",
+            yValueFormatString: "$#,###.##",
+            dataPoints : dps1
+          }]
+        }],
+        navigator: {
+          data: [{
+            dataPoints: dps2
+          }],
+          slider: {
+            minimum: new Date(2018, 04, 01),
+            maximum: new Date(2018, 06, 01)
+          }
+        }
+      });
+      $.getJSON("https://canvasjs.com/data/docs/btcusd2018.json", function(data) {
+        for(var i = 0; i < data.length; i++){
+          dps1.push({x: new Date(data[i].date), y: [Number(data[i].open), Number(data[i].high), Number(data[i].low), Number(data[i].close)]});
+          dps2.push({x: new Date(data[i].date), y: Number(data[i].close)});
+        }
+        stockChart.render();
+      });
+    }
+    </script>   
+</head>
    <body>
     <header>
      
@@ -168,6 +217,15 @@
                         <iframe width="380" height="180" src="https://www.youtube.com/embed/pJUvvC_Bv5k" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                         <iframe width="380" height="180" src="https://www.youtube.com/embed/5Mwyy0dLcSE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                     </aside>
+              </div>
+              <div>
+                <h2><i class="fab fa-bitcoin"></i> Crypto Prices and analysis</h2>
+                  
+                <div id="chartContainer" style="height: 400px; width: 50%;"></div>
+
+              <div id="priceYesterday"></div>
+              
+                 
               </div>
             </aside>
            
